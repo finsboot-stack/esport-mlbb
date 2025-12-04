@@ -1,0 +1,97 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: #00ffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #000, #001122);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+h1, h2, h3 {
+    text-shadow: 0 0 10px #00ffff;
+}
+
+button, .team-card, nav button {
+    background: #000;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover, .team-card:hover, nav button:hover {
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    transform: scale(1.05);
+}
+
+section {
+    display: none;
+    padding: 20px;
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.schedule-list, .bracket {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.round, .round-bracket {
+    margin-bottom: 20px;
+}
+
+.match {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid #00ffff;
+}
+
+.admin-section {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    background: #000;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    button {
+        width: 100%;
+    }
+}
