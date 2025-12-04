@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classmeet Esport MLBB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Classmeet Esport MLBB</h1>
+        <p>Event esports Mobile Legends: Bang Bang untuk kelas terbaik. Bergabunglah dalam kompetisi seru dengan 18 tim pemenang!</p>
+        <nav>
+            <button onclick="navigateTo('teams')">Daftar Tim</button>
+            <button onclick="navigateTo('schedule')">Jadwal</button>
+            <button onclick="navigateTo('bracket')">Bracket</button>
+            <a href="admin.html" class="admin-link">Admin</a>
+        </nav>
+    </header>
+
+    <section id="home" class="active">
+        <h2>Selamat Datang di Classmeet Esport MLBB</h2>
+        <p>Deskripsi singkat: Turnamen Mobile Legends: Bang Bang dengan tema cyberpunk. Tunjukkan skillmu dan menangkan hadiah!</p>
+    </section>
+
+    <section id="teams">
+        <h2>Daftar 18 Tim</h2>
+        <div class="team-grid">
+            <div class="team-card">Tim Alpha</div>
+            <div class="team-card">Tim Beta</div>
+            <div class="team-card">Tim Gamma</div>
+            <div class="team-card">Tim Delta</div>
+            <div class="team-card">Tim Echo</div>
+            <div class="team-card">Tim Foxtrot</div>
+            <div class="team-card">Tim Golf</div>
+            <div class="team-card">Tim Hotel</div>
+            <div class="team-card">Tim India</div>
+            <div class="team-card">Tim Juliet</div>
+            <div class="team-card">Tim Kilo</div>
+            <div class="team-card">Tim Lima</div>
+            <div class="team-card">Tim Mike</div>
+            <div class="team-card">Tim November</div>
+            <div class="team-card">Tim Oscar</div>
+            <div class="team-card">Tim Papa</div>
+            <div class="team-card">Tim Quebec</div>
+            <div class="team-card">Tim Romeo</div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Jadwal Pertandingan</h2>
+        <div class="schedule-list">
+            <div class="round">
+                <h3>Ronde 1</h3>
+                <p>Tim Alpha vs Tim Beta - 10:00 AM</p>
+                <p>Tim Gamma vs Tim Delta - 11:00 AM</p>
+                <!-- Tambahkan lebih banyak dummy -->
+                <p>Tim Echo vs Tim Foxtrot - 12:00 PM</p>
+                <p>Tim Golf vs Tim Hotel - 1:00 PM</p>
+                <p>Tim India vs Tim Juliet - 2:00 PM</p>
+                <p>Tim Kilo vs Tim Lima - 3:00 PM</p>
+                <p>Tim Mike vs Tim November - 4:00 PM</p>
+                <p>Tim Oscar vs Tim Papa - 5:00 PM</p>
+                <p>Tim Quebec vs Tim Romeo - 6:00 PM</p>
+            </div>
+            <div class="round">
+                <h3>Ronde 2</h3>
+                <p>Pemenang R1-1 vs Pemenang R1-2 - 10:00 AM</p>
+                <!-- Dummy lainnya -->
+            </div>
+            <!-- Ronde 3 dan 4 serupa -->
+        </div>
+    </section>
+
+    <section id="bracket">
+        <h2>Bracket Turnamen (Single Eliminasi)</h2>
+        <div class="bracket">
+            <!-- Sederhana bracket HTML, update via admin -->
+            <div class="round-bracket">
+                <h4>Ronde 1</h4>
+                <div class="match">Tim Alpha (2-0) vs Tim Beta</div>
+                <div class="match">Tim Gamma (1-1) vs Tim Delta</div>
+                <!-- Dummy lainnya -->
+            </div>
+            <div class="round-bracket">
+                <h4>Ronde 2</h4>
+                <div class="match">Pemenang R1-1 vs Pemenang R1-2</div>
+            </div>
+            <!-- Lanjutkan hingga final -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
